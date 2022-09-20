@@ -1,4 +1,4 @@
-module principal
+module github.com/AlanaPeres/Biblioteca
 
 go 1.18
 
