@@ -1,10 +1,9 @@
 package main
 
 import (
-	
+"github.com/AlanaPeres/Biblioteca/tree/main/server"
 )
-
 func main() {
-	server := server.NewServer()
-	Server.Run()
+	s := server.NewServer()
+	s.Run()
 }
