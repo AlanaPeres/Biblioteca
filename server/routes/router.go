@@ -5,9 +5,9 @@ import (
 )
 //método
 func ConfigRoutes(router *gin.Engine) *gin.Engine {
-	main := routes.Group("api/v1")
+	main := router.Group("api/v1")
 	{
-		books := main.Group("Books")
+		books := main.Group("books")
 		{
 			books.GET("/")
 		}
