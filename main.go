@@ -1,7 +1,7 @@
 package main
 
 import (
-"github.com/AlanaPeres/Biblioteca/tree/main/server"
+"github.com/AlanaPeres/Biblioteca/server"
 )
 func main() {
 	s := server.NewServer()

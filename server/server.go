@@ -2,7 +2,7 @@ package server
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/AlanaPeres/Biblioteca/tree/main/server/routes"
+	"github.com/AlanaPeres/Biblioteca/server/routes"
 	"log"
 )
 
