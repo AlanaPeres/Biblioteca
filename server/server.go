@@ -1,19 +1,19 @@
 package server
 
 import (
+	"log"
 	"github.com/gin-gonic/gin"
 	"github.com/AlanaPeres/Biblioteca/server/routes"
-	"log"
 )
 
 type Server struct {
-	port string
+	port   string
 	server *gin.Engine
 }
 
 func NewServer() Server {
 	return Server{
-		port: "5000",
+		port:   "5000",
 		server: gin.Default(),
 	}
 }

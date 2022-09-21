@@ -1,0 +1,23 @@
+versão : " 3.7 "
+
+serviços :
+  banco de dados :
+    construir :
+      contexto : .
+      dockerfile : .dockerfile
+    imagem : github.com/hyperyuri/webapi-db
+    container_name : webapi-mvc-db
+    reiniciar : a menos que parado
+    tty : verdade
+    portas :
+      - " 25432:5432 "
+    ambiente :
+      POSTGRES_DB : livros
+      POSTGRES_USER : administrador
+      POSTGRES_PASSWORD : 123456
+      PGDATA : /var/lib/postgresql/data/webapi-mvc
+    volumes :
+      - webapi-mvc:/var/lib/postgresql/data
+
+volumes :
+  webapi-mvc :
